@@ -1,0 +1,9 @@
+# Console em 115200 bps (mesmo valor de monitor_speed no platformio.ini)
+CONFIG_ESP_CONSOLE_UART_DEFAULT=y
+CONFIG_ESP_CONSOLE_UART_BAUDRATE=115200
+
+# Tick de 1 ms -> vTaskDelay com resolucao de 1 ms (amostragem mais precisa)
+CONFIG_FREERTOS_HZ=1000
+
+# Suporte a float no printf (impressao dos valores em g e graus/s)
+CONFIG_NEWLIB_NANO_FORMAT=n

@@ -1,0 +1,112 @@
+\documentclass[a4paper, 10pt]{article} % Tamanho de fonte menor
+
+\setlength{\headheight}{34.54448pt}
+\addtolength{\topmargin}{-32.54448pt} % Ajustei mais a margem superior
+\setlength{\headsep}{10pt} % Aumento do espaçamento entre a borda superior e o cabeçalho
+
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{color}
+\usepackage{indentfirst}
+\setlength{\marginparwidth}{2cm}
+\usepackage{fancyhdr} % Pacote para cabeçalho
+\usepackage{verbatim}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Ajuste das margens
+\geometry{
+    top=0.9in, % Margem superior ajustada para 0.9 polegadas
+    bottom=1.in, % Margem inferior
+    left=1.1in, % Margem esquerda
+    right=1in, % Margem direita reduzida
+}
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		\begin{figure}[htb!]
+			\begin{center}
+				\includegraphics[width=3.9cm]{Logo_UnB.png}
+			\end{center}
+		\end{figure}
+        \Large{\textbf{Universidade de Brasília}}\\
+        \Large{FCTE}\\
+        \Large{Instrumentação Eletrônica}\\
+        
+        \vspace{100pt}
+        
+        \LARGE{\textbf{Instrumentação Eletrônica: Trabalho Final}}\\
+        
+        \vspace{120pt}
+        
+        
+        \vspace{20pt} 
+        \hfill  Felipe de Castro Quixabeira \hspace{20pt} Mat: 231026812  \\
+        \hfill  Gabriel Celestino de Almeida \hspace{20pt} Mat: 231027079  \\
+        
+        \vspace{25pt}
+        \hfill \underline{Professor:}\\
+        \hfill Claudia Ochoa\\ %Entre com o nome do professor
+        
+        
+        \vfill
+        \begin{center}
+        Brasília
+
+        2026
+
+        \thispagestyle{empty}
+    \end{center}
+	\end{center}
+\end{titlepage}
+
+\newpage
+
+% Configuração do cabeçalho
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Universidade de Brasília \\ Faculdade de Ciências e Tecnologias em Engenharia \\ Engenharia Eletrônica}
+\fancyhead[R]{\includegraphics[width=1.5cm]{Logo_UnB.png}}
+
+\tableofcontents
+\newpage
+%Escrever aqui
+
+\section{Introdução}
+Sensores acelerômetros são utilizados em múltiplas aplicações, atualmente encontramos eles em aplicações de robótica, interações de controle gestual, controle de veículos aéreos não tripulados e diversos outros usos.
+Para utilizarmos de forma apropriada os sensores desse tipo é necessário compreender os princípios físicos por trás do funcionamento de diferentes tipos de acelerômetros, como se originam suas principais fontes de erro, as principais características das leituras realizadas e as formas adequadas de obtenção dos dados.
+
+\section{Objetivos}
+O objetivo do trabalho proposto é fazer o estudo do funcionamento do sensor acelerômetro que se
+encontra na Unidade de Medição Inercial MPU 6050, na qual será extraido as suas principais características. Verificando todas elas por meio da folha de dados (\textit{datasheet}).
+
+\section{Fundamentação Teórica}
+
+\subsection{Acelerômetro}
+O acelerômetro é um transdutor capaz de medir aceleração, ele é reponsável por converter grandeza mecânica em sinais elétricos. Dentre os acelerômetros que existem os que se destacam são os baseados em MEMS (\textit{Micro-Electro-Mechanical Systems}), que utilizam elementos mecânicos muito pequenos, de escala micrométrica, ocasionando no baixo cosumo energético e custo.
+
+\subsection{Princípio de Funcionamento}
+Seu funcionamento se dar da seguinte forma. Internamente, imagine uma caixa com uma pequena massa suspensa por molas microscópicas, onde preso nessa massa existem várias ´´linhas" de silício parecidos com os dentes de um pente que ficam entrelaçado com outros dentes fixos no chip. Quando se move o sensor, a massa se desloca e na eletrônica mudar a distância significa alterar a capacitância entre as pequenas peças, tendo como resultado uma variação elétrica, que por meio dela é possível calcular exatamente quanto de força se aplicou em um dos eixos. Existe no chip circuitos de condicionamento que convertem essa variação em um valor digital de 16 bits.
+
+\subsection{Erros e Fontes de Incerteza}
+
+
+\subsection{Característica do Sensor}
+
+
+\section{Verificação Experimental}
+
+
+\section{Referências}
+
+
+\end{document}
