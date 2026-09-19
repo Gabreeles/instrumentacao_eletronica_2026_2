@@ -1,6 +1,0 @@
-.pio/
-.vscode/
-sdkconfig.nodemcu-32s
-sdkconfig.old
-build/
-*.csv
