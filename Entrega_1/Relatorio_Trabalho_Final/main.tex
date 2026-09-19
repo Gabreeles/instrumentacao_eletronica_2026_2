@@ -10,6 +10,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{subcaption}
 \usepackage{color}
 \usepackage{indentfirst}
 \setlength{\marginparwidth}{2cm}
@@ -95,7 +96,7 @@ encontra na Unidade de Medição Inercial MPU 6050, na qual será extraido as su
 O acelerômetro é um transdutor capaz de medir aceleração, ele é reponsável por converter grandeza mecânica em sinais elétricos. Dentre os acelerômetros que existem os que se destacam são os baseados em MEMS (\textit{Micro-Electro-Mechanical Systems}), que utilizam elementos mecânicos muito pequenos, de escala micrométrica, ocasionando no baixo cosumo energético e custo.
 
 \subsection{Princípio de Funcionamento}
-Seu funcionamento se dar da seguinte forma. Internamente, imagine uma caixa com uma pequena massa suspensa por molas microscópicas, onde preso nessa massa existem várias ´´linhas" de silício parecidos com os dentes de um pente que ficam entrelaçado com outros dentes fixos no chip. Quando se move o sensor, a massa se desloca e na eletrônica mudar a distância significa alterar a capacitância entre as pequenas peças, tendo como resultado uma variação elétrica, que por meio dela é possível calcular exatamente quanto de força se aplicou em um dos eixos. Existe no chip circuitos de condicionamento que convertem essa variação em um valor digital de 16 bits.
+Seu funcionamento se dar da seguinte forma. Internamente, imagine uma caixa com uma pequena massa suspensa por molas microscópicas, onde preso nessa massa existem várias ``linhas" de silício parecidos com os dentes de um pente que ficam entrelaçado com outros dentes fixos no chip. Quando se move o sensor, a massa se desloca e na eletrônica mudar a distância significa alterar a capacitância entre as pequenas peças, tendo como resultado uma variação elétrica, que por meio dela é possível calcular exatamente quanto de força se aplicou em um dos eixos. Existe no chip circuitos de condicionamento que convertem essa variação em um valor digital de 16 bits.
 
 \subsection{Erros e Fontes de Incerteza}
 
@@ -104,7 +105,61 @@ Seu funcionamento se dar da seguinte forma. Internamente, imagine uma caixa com 
 
 
 \section{Verificação Experimental}
+O sensor foi mantido em repouso sobre a bancada em seis posições, duas para cada eixo, girando a placa para que a gravidade apontasse primeiro no sentido positivo e depois no sentido negativo do eixo em teste. Em cada posição foram registrados cerca de 10 segundos de leitura simultânea dos três eixos. A Figura~\ref{fig:verificacao_experimental} reúne os seis ensaios.
 
+Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}$ e os outros dois, perto de zero, como se espera do sensor em repouso. As leituras não coincidem exatamente com esses valores: o eixo Z, por exemplo, indica cerca de $0{,}1\,\mathrm{g}$ nos ensaios em que deveria ler zero. Esse desvio soma o erro de zero do próprio sensor, informado no \textit{datasheet}, ao desalinhamento entre a placa e a horizontal, já que a superfície de apoio não está perfeitamente nivelada.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figuras/apoiado_na_borda_X_para_baixo.png}
+		\caption{Placa apoiada na borda, com o eixo X na vertical. X fica em torno de $+1\,g$.}
+		\label{fig:x_positivo}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figuras/borda_oposta_X_para_cima.png}
+		\caption{A mesma placa virada para a borda oposta. O eixo X passa a marcar cerca de $-1\,g$.}
+		\label{fig:x_negativo}
+	\end{subfigure}
+
+	\vspace{0.35cm}
+
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figuras/apoiado_na_borda_Y_para_baixo.png}
+		\caption{Placa apoiada na borda com o eixo Y na vertical, lendo perto de $+1\,g$.}
+		\label{fig:y_positivo}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figuras/borda_oposta_Y_para_cima.png}
+		\caption{Borda oposta, eixo Y invertido: a leitura cai para cerca de $-1\,g$.}
+		\label{fig:y_negativo}
+	\end{subfigure}
+
+	\vspace{0.35cm}
+
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figuras/deitado_componentes_para_cima_Z.png}
+		\caption{Placa deitada, componentes voltados para cima. Z marca pouco mais de $+1\,g$.}
+		\label{fig:z_positivo}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figuras/deitado_de_cabeca_para_baixo_Z.png}
+		\caption{Placa deitada de cabeça para baixo, com Z em torno de $-1\,g$.}
+		\label{fig:z_negativo}
+	\end{subfigure}
+
+	\caption{Aceleração medida nos três eixos do MPU 6050 com o sensor parado, nas seis posições de ensaio, na ordem dos eixos X, Y e Z.}
+	\label{fig:verificacao_experimental}
+\end{figure}
 
 \section{Referências}
 

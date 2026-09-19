@@ -7,4 +7,4 @@
 \contentsline {subsection}{\numberline {3.3}Erros e Fontes de Incerteza}{2}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Característica do Sensor}{2}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Verificação Experimental}{2}{section.4}%
-\contentsline {section}{\numberline {5}Referências}{2}{section.5}%
+\contentsline {section}{\numberline {5}Referências}{3}{section.5}%
