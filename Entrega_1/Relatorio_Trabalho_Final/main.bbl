@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{aguirre2013fundamentos}
+L.~Aguirre, {\em Fundamentos de Instrumenta{\c{c}}{\~a}o}.
+\newblock Pearson Universidades, 2013.
+
+\bibitem{ghanipoor2020}
+F.~Ghanipoor, M.~Hashemi, and H.~Salarieh, ``Toward calibration of
+  low-precision mems imu using a nonlinear model and tukf,'' {\em IEEE Sensors
+  Journal}, vol.~20, no.~8, pp.~4131--4138, 2020.
+
+\bibitem{ltc3600}
+InvenSense Inc., {\em MPU-6000 and MPU-6050 Product Specification Revision
+  3.3}, 2012.
+\newblock Rev. 3.3.
+
+\end{thebibliography}

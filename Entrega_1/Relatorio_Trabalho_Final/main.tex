@@ -87,8 +87,7 @@ Sensores acelerômetros são utilizados em múltiplas aplicações, atualmente e
 Para utilizarmos de forma apropriada os sensores desse tipo é necessário compreender os princípios físicos por trás do funcionamento de diferentes tipos de acelerômetros, como se originam suas principais fontes de erro, as principais características das leituras realizadas e as formas adequadas de obtenção dos dados.
 
 \section{Objetivos}
-O objetivo do trabalho proposto é fazer o estudo do funcionamento do sensor acelerômetro que se
-encontra na Unidade de Medição Inercial MPU 6050, na qual será extraido as suas principais características. Verificando todas elas por meio da folha de dados (\textit{datasheet}).
+Os objetivos do trabalho proposto é estudar o funcionamento do sensor acelerômetro da Unidade de Medição Inercial MPU 6050, extrair as suas principais características e verificar todas elas por meio da folha de dados (\textit{datasheet}).
 
 \section{Fundamentação Teórica}
 
@@ -96,13 +95,30 @@ encontra na Unidade de Medição Inercial MPU 6050, na qual será extraido as su
 O acelerômetro é um transdutor capaz de medir aceleração, ele é reponsável por converter grandeza mecânica em sinais elétricos. Dentre os acelerômetros que existem os que se destacam são os baseados em MEMS (\textit{Micro-Electro-Mechanical Systems}), que utilizam elementos mecânicos muito pequenos, de escala micrométrica, ocasionando no baixo cosumo energético e custo.
 
 \subsection{Princípio de Funcionamento}
-Seu funcionamento se dar da seguinte forma. Internamente, imagine uma caixa com uma pequena massa suspensa por molas microscópicas, onde preso nessa massa existem várias ``linhas" de silício parecidos com os dentes de um pente que ficam entrelaçado com outros dentes fixos no chip. Quando se move o sensor, a massa se desloca e na eletrônica mudar a distância significa alterar a capacitância entre as pequenas peças, tendo como resultado uma variação elétrica, que por meio dela é possível calcular exatamente quanto de força se aplicou em um dos eixos. Existe no chip circuitos de condicionamento que convertem essa variação em um valor digital de 16 bits.
+Internamente o sistema pode ser interpretado como uma pequena massa suspensa por molas microscópicas, onde preso nessa massa existem várias ``linhas" de silício similares aos dentes de um pente entrelaçam-se com outros dentes fixos no chip. Quando se move o sensor, a massa se desloca e muda a distância e consequentemente a capacitância entre as peças é alterada, tendo como resultado uma variação elétrica, que permite calcular quanto de força se aplicou em um dos eixos \cite{aguirre2013fundamentos}. Existe no chip circuitos de condicionamento que convertem essa variação em um valor digital de 16 bits.
 
 \subsection{Erros e Fontes de Incerteza}
 
+Os erros nas medições de um acelerômetro MEMS podem decorrer de \textit{offset}, resolução limitada e desalinhamento em relação ao sistema de coordenadas de referência. Em movimentos de rotação, a distância entre o sensor e o centro de rotação também pode introduzir erros associados à aceleração angular. Esses fatores reduzem a precisão das medições e devem ser considerados na calibração \cite{ghanipoor2020}.
 
 \subsection{Característica do Sensor}
 
+As caracteristicas principais fornecidas pelo fabricante do sensor MPU 6050 são apresentadas na Tabela~\ref{tab:parâmetros}. A faixa de medição do sensor é de até $\pm 16\,\mathrm{g}$, com resolução a partir de $0{,}061\,\mathrm{g/bit}$ e sensibilidade de $16{,}384\,\mathrm{LSB/g}$. Esses valores podem ser alterados entre 4 diferentes faixas de medição, configuradas a partir de um dos registradores do sensor. A não linearidade do sensor é de $0{,}5\%$ e o fundo de escala é de 16 bits.
+
+\begin{table}[H]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|} \hline
+		\textbf{Parâmetro} & \textbf{Mínimo} & \textbf{Típico} & \textbf{Máximo} & \textbf{Unidade} \\ \hline
+		Fundo de escala & & 16 & & bits \\ \hline
+		Amplitude de faixa nominal & 2 & & 16 & g \\ \hline
+		Sensibilidade & 2,048 & & 16,384 & LSB/g \\ \hline
+		Resolução & 0,061 & & 0,488 & g/bit \\ \hline
+		Não linearidade & & 0,5 & & \% \\ \hline
+	\end{tabular}
+	\caption{Parâmetros do sensor MPU 6050, extraídos do \textit{datasheet} \cite{ltc3600}.}
+	\label{tab:parâmetros}
+	\end{center}
+\end{table}
 
 \section{Verificação Experimental}
 O sensor foi mantido em repouso sobre a bancada em seis posições, duas para cada eixo, girando a placa para que a gravidade apontasse primeiro no sentido positivo e depois no sentido negativo do eixo em teste. Em cada posição foram registrados cerca de 10 segundos de leitura simultânea dos três eixos. A Figura~\ref{fig:verificacao_experimental} reúne os seis ensaios.
@@ -163,5 +179,7 @@ Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}
 
 \section{Referências}
 
+\bibliographystyle{ieeetr}
+\bibliography{referencias}
 
 \end{document}
