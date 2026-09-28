@@ -4,12 +4,23 @@
 L.~Aguirre, {\em Fundamentos de Instrumenta{\c{c}}{\~a}o}.
 \newblock Pearson Universidades, 2013.
 
+\bibitem{europractice_accel}
+A.~Mohammadi and S.~Ng, ``Z-axis {MEMS} accelerometer.'' EUROPRACTICE.
+  Dispon{\'\i}vel em:
+  \url{https://europractice-ic.com/markets/z-axis-mems-accelerometer/}.
+
+\bibitem{ufpr_accel}
+{Universidade Federal do Paran{\'a}}, ``Princ{\'\i}pio de funcionamento do
+  aceler{\^o}metro.'' Departamento de Engenharia El{\'e}trica, 1999.
+  Dispon{\'\i}vel em:
+  \url{https://www.eletrica.ufpr.br/edu/Sensores/1999/joao/funcionamento.htm}.
+
 \bibitem{ghanipoor2020}
 F.~Ghanipoor, M.~Hashemi, and H.~Salarieh, ``Toward calibration of
   low-precision mems imu using a nonlinear model and tukf,'' {\em IEEE Sensors
   Journal}, vol.~20, no.~8, pp.~4131--4138, 2020.
 
-\bibitem{ltc3600}
+\bibitem{mpu6050}
 InvenSense Inc., {\em MPU-6000 and MPU-6050 Product Specification Revision
   3.3}, 2012.
 \newblock Rev. 3.3.

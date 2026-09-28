@@ -4,7 +4,9 @@
 \contentsline {section}{\numberline {3}Fundamentação Teórica}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Acelerômetro}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Princípio de Funcionamento}{2}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Erros e Fontes de Incerteza}{2}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Característica do Sensor}{2}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.3}Tipos de Acelerômetros}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Erros e Fontes de Incerteza}{3}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Acelerômetro do MPU 6050}{3}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Característica do Sensor}{3}{subsection.3.6}%
 \contentsline {section}{\numberline {4}Verificação Experimental}{3}{section.4}%
-\contentsline {section}{\numberline {5}Referências}{3}{section.5}%
+\contentsline {section}{Referências}{4}{figure.caption.6}%

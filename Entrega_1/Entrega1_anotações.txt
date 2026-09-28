@@ -1,0 +1,5 @@
+-Objetivo estudar o funcionamento do sensor acelerômetro MPU6050 de acordo com o datasheet;
+-O relatório deve ter no máximo 3 páginas. Formato do documento fica a nosso critério, eu já tenho um pronto;
+-É recomendado fazer uma pesquisa bibliográfica, artigo, revistas e etc;
+-Explicar o funcionamento do acelerômetro:
+	-Principio físico, tipos, principais fontes de erros, aplicações, etc;
