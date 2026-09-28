@@ -22,6 +22,7 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{comment}
 
 % Ajuste das margens
 \geometry{
@@ -31,7 +32,7 @@
     right=1in, % Margem direita reduzida
 }
 \begin{document}
-
+\begin{comment}
 \begin{titlepage}
 	\begin{center}
 		\begin{figure}[htb!]
@@ -71,17 +72,19 @@
 \end{titlepage}
 
 \newpage
-
+\end{comment}
 % Configuração do cabeçalho
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Universidade de Brasília \\ Faculdade de Ciências e Tecnologias em Engenharia \\ Engenharia Eletrônica}
 \fancyhead[R]{\includegraphics[width=1.5cm]{Logo_UnB.png}}
 
-\tableofcontents
-\newpage
-%Escrever aqui
+%\tableofcontents
+%\newpage
 
+
+%Escrever aqui
+\textbf{Nomes:} Felipe de Castro Quixabeira (231026812) e Gabriel Celestino de Almeida (231027079)
 \section{Introdução}
 Sensores acelerômetros são utilizados em múltiplas aplicações, atualmente encontramos eles em aplicações de robótica, interações de controle gestual, controle de veículos aéreos não tripulados e diversos outros usos.
 Para utilizarmos de forma apropriada os sensores desse tipo é necessário compreender os princípios físicos por trás do funcionamento de diferentes tipos de acelerômetros, como se originam suas principais fontes de erro, as principais características das leituras realizadas e as formas adequadas de obtenção dos dados.
@@ -214,6 +217,7 @@ Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}
 	\label{fig:verificacao_experimental}
 \end{figure}
 
+\vspace{-0.5cm}
 \addcontentsline{toc}{section}{Referências}
 \bibliographystyle{ieeetr}
 \bibliography{referencias}

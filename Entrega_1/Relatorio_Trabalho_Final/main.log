@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.4)  28 SEP 2026 10:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.4)  28 SEP 2026 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -378,33 +378,35 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip68
-) (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 ) (main.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported on input line 8.
+(babel)             Reported on input line 14.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
  (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count326
@@ -430,14 +432,14 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 33.
-Package gensymb Info: Math companion symbols declared on input line 33.
-LaTeX Info: Redefining \degree on input line 33.
-LaTeX Info: Redefining \celsius on input line 33.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 33.
-LaTeX Info: Redefining \ohm on input line 33.
-Package gensymb Info: Using \textohm for \ohm on input line 33.
-Package gensymb Info: Using \textmu for \micro on input line 33.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 34.
+Package gensymb Info: Math companion symbols declared on input line 34.
+LaTeX Info: Redefining \degree on input line 34.
+LaTeX Info: Redefining \celsius on input line 34.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 34.
+LaTeX Info: Redefining \ohm on input line 34.
+Package gensymb Info: Using \textohm for \ohm on input line 34.
+Package gensymb Info: Using \textmu for \micro on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -474,119 +476,103 @@ Package gensymb Info: Using \textmu for \micro on input line 33.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count332
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 34.
 (main.out) (main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
-<Logo_UnB.png, id=47, 641.39626pt x 321.2pt>
+ Excluding 'comment' comment.
+<Figuras/acelerometro_mems_microscopia.png, id=49, 2020.54875pt x 1355.0625pt>
+File: Figuras/acelerometro_mems_microscopia.png Graphic file (type png)
+<use Figuras/acelerometro_mems_microscopia.png>
+Package pdftex.def Info: Figuras/acelerometro_mems_microscopia.png  used on input line 107.
+(pdftex.def)             Requested size: 190.90587pt x 128.0374pt.
+<Figuras/acelerometro_esquema.png, id=52, 320.19624pt x 260.975pt>
+File: Figuras/acelerometro_esquema.png Graphic file (type png)
+<use Figuras/acelerometro_esquema.png>
+Package pdftex.def Info: Figuras/acelerometro_esquema.png  used on input line 113.
+(pdftex.def)             Requested size: 157.09296pt x 128.0374pt.
+<Logo_UnB.png, id=57, 641.39626pt x 321.2pt>
 File: Logo_UnB.png Graphic file (type png)
 <use Logo_UnB.png>
-Package pdftex.def Info: Logo_UnB.png  used on input line 39.
-(pdftex.def)             Requested size: 110.96556pt x 55.56879pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+Package pdftex.def Info: Logo_UnB.png  used on input line 122.
+(pdftex.def)             Requested size: 42.67912pt x 21.36884pt.
+ [1{C:/Users/felip/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+ <./Logo_UnB.png (PNG copy)> <./Figuras/acelerometro_mems_microscopia.png (PNG copy)> <./Figuras/acelerometro_esquema.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 130.
  (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 130.
  (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{C:/Users/felip/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Logo_UnB.png (PNG copy)>] (main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-File: Logo_UnB.png Graphic file (type png)
-<use Logo_UnB.png>
-Package pdftex.def Info: Logo_UnB.png  used on input line 82.
-(pdftex.def)             Requested size: 42.67912pt x 21.36884pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.82 \newpage
-              [1]
-<Figuras/acelerometro_mems_microscopia.png, id=76, 2020.54875pt x 1355.0625pt>
-File: Figuras/acelerometro_mems_microscopia.png Graphic file (type png)
-<use Figuras/acelerometro_mems_microscopia.png>
-Package pdftex.def Info: Figuras/acelerometro_mems_microscopia.png  used on input line 104.
-(pdftex.def)             Requested size: 190.90587pt x 128.0374pt.
-<Figuras/acelerometro_esquema.png, id=79, 320.19624pt x 260.975pt>
-File: Figuras/acelerometro_esquema.png Graphic file (type png)
-<use Figuras/acelerometro_esquema.png>
-Package pdftex.def Info: Figuras/acelerometro_esquema.png  used on input line 110.
-(pdftex.def)             Requested size: 157.09296pt x 128.0374pt.
-File: Logo_UnB.png Graphic file (type png)
-<use Logo_UnB.png>
-Package pdftex.def Info: Logo_UnB.png  used on input line 123.
-(pdftex.def)             Requested size: 42.67912pt x 21.36884pt.
- [2 <./Figuras/acelerometro_mems_microscopia.png (PNG copy)> <./Figuras/acelerometro_esquema.png (PNG copy)>]
-<Figuras/montagem_esp32_mpu6050.png, id=100, 902.37125pt x 1604.99625pt>
+)
+<Figuras/montagem_esp32_mpu6050.png, id=78, 902.37125pt x 1604.99625pt>
 File: Figuras/montagem_esp32_mpu6050.png Graphic file (type png)
 <use Figuras/montagem_esp32_mpu6050.png>
-Package pdftex.def Info: Figuras/montagem_esp32_mpu6050.png  used on input line 158.
+Package pdftex.def Info: Figuras/montagem_esp32_mpu6050.png  used on input line 161.
 (pdftex.def)             Requested size: 178.29346pt x 113.63264pt.
 File: Logo_UnB.png Graphic file (type png)
 <use Logo_UnB.png>
-Package pdftex.def Info: Logo_UnB.png  used on input line 164.
+Package pdftex.def Info: Logo_UnB.png  used on input line 165.
 (pdftex.def)             Requested size: 42.67912pt x 21.36884pt.
- [3 <./Figuras/montagem_esp32_mpu6050.png (PNG copy)>]
-<Figuras/apoiado_na_borda_X_para_baixo.png, id=116, 722.7pt x 361.35pt>
+ [2]
+<Figuras/apoiado_na_borda_X_para_baixo.png, id=93, 722.7pt x 361.35pt>
 File: Figuras/apoiado_na_borda_X_para_baixo.png Graphic file (type png)
 <use Figuras/apoiado_na_borda_X_para_baixo.png>
-Package pdftex.def Info: Figuras/apoiado_na_borda_X_para_baixo.png  used on input line 171.
+Package pdftex.def Info: Figuras/apoiado_na_borda_X_para_baixo.png  used on input line 174.
 (pdftex.def)             Requested size: 142.6402pt x 71.32034pt.
-<Figuras/apoiado_na_borda_Y_para_baixo.png, id=118, 722.7pt x 361.35pt>
+<Figuras/apoiado_na_borda_Y_para_baixo.png, id=95, 722.7pt x 361.35pt>
 File: Figuras/apoiado_na_borda_Y_para_baixo.png Graphic file (type png)
 <use Figuras/apoiado_na_borda_Y_para_baixo.png>
-Package pdftex.def Info: Figuras/apoiado_na_borda_Y_para_baixo.png  used on input line 178.
+Package pdftex.def Info: Figuras/apoiado_na_borda_Y_para_baixo.png  used on input line 181.
 (pdftex.def)             Requested size: 142.6402pt x 71.32034pt.
-<Figuras/deitado_componentes_para_cima_Z.png, id=119, 722.7pt x 361.35pt>
+<Figuras/deitado_componentes_para_cima_Z.png, id=96, 722.7pt x 361.35pt>
 File: Figuras/deitado_componentes_para_cima_Z.png Graphic file (type png)
 <use Figuras/deitado_componentes_para_cima_Z.png>
-Package pdftex.def Info: Figuras/deitado_componentes_para_cima_Z.png  used on input line 185.
+Package pdftex.def Info: Figuras/deitado_componentes_para_cima_Z.png  used on input line 188.
 (pdftex.def)             Requested size: 142.6402pt x 71.32034pt.
-<Figuras/borda_oposta_X_para_cima.png, id=120, 722.7pt x 361.35pt>
+<Figuras/borda_oposta_X_para_cima.png, id=97, 722.7pt x 361.35pt>
 File: Figuras/borda_oposta_X_para_cima.png Graphic file (type png)
 <use Figuras/borda_oposta_X_para_cima.png>
-Package pdftex.def Info: Figuras/borda_oposta_X_para_cima.png  used on input line 194.
+Package pdftex.def Info: Figuras/borda_oposta_X_para_cima.png  used on input line 197.
 (pdftex.def)             Requested size: 142.6402pt x 71.32034pt.
-<Figuras/borda_oposta_Y_para_cima.png, id=121, 722.7pt x 361.35pt>
+<Figuras/borda_oposta_Y_para_cima.png, id=98, 722.7pt x 361.35pt>
 File: Figuras/borda_oposta_Y_para_cima.png Graphic file (type png)
 <use Figuras/borda_oposta_Y_para_cima.png>
-Package pdftex.def Info: Figuras/borda_oposta_Y_para_cima.png  used on input line 201.
+Package pdftex.def Info: Figuras/borda_oposta_Y_para_cima.png  used on input line 204.
 (pdftex.def)             Requested size: 142.6402pt x 71.32034pt.
-<Figuras/deitado_de_cabeca_para_baixo_Z.png, id=122, 722.7pt x 361.35pt>
+<Figuras/deitado_de_cabeca_para_baixo_Z.png, id=99, 722.7pt x 361.35pt>
 File: Figuras/deitado_de_cabeca_para_baixo_Z.png Graphic file (type png)
 <use Figuras/deitado_de_cabeca_para_baixo_Z.png>
-Package pdftex.def Info: Figuras/deitado_de_cabeca_para_baixo_Z.png  used on input line 208.
+Package pdftex.def Info: Figuras/deitado_de_cabeca_para_baixo_Z.png  used on input line 211.
 (pdftex.def)             Requested size: 142.6402pt x 71.32034pt.
  (main.bbl)
 File: Logo_UnB.png Graphic file (type png)
 <use Logo_UnB.png>
-Package pdftex.def Info: Logo_UnB.png  used on input line 221.
+Package pdftex.def Info: Logo_UnB.png  used on input line 225.
 (pdftex.def)             Requested size: 42.67912pt x 21.36884pt.
- [4 <./Figuras/apoiado_na_borda_X_para_baixo.png> <./Figuras/apoiado_na_borda_Y_para_baixo.png> <./Figuras/deitado_componentes_para_cima_Z.png> <./Figuras/borda_oposta_X_para_cima.png> <./Figuras/borda_oposta_Y_para_cima.png> <./Figuras/deitado_de_cabeca_para_baixo_Z.png>] (main.aux)
+ [3 <./Figuras/apoiado_na_borda_X_para_baixo.png> <./Figuras/apoiado_na_borda_Y_para_baixo.png> <./Figuras/deitado_componentes_para_cima_Z.png> <./Figuras/borda_oposta_X_para_cima.png> <./Figuras/borda_oposta_Y_para_cima.png> <./Figuras/deitado_de_cabeca_para_baixo_Z.png> <./Figuras/montagem_esp32_mpu6050.png (PNG copy)>] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AF96127B6837A1CABF0C513D47AA212B;1700.
+(rerunfilecheck)             Checksum: 2E3D0AD2BB3988EA0DAB10BEC53F6878;1700.
  ) 
 Here is how much of TeX's memory you used:
- 15251 strings out of 467871
- 247453 string characters out of 5418377
- 681082 words of memory out of 5000000
- 43900 multiletter control sequences out of 15000+600000
- 640021 words of font info for 86 fonts, out of 8000000 for 9000
+ 15270 strings out of 467871
+ 247884 string characters out of 5418377
+ 682019 words of memory out of 5000000
+ 43926 multiletter control sequences out of 15000+600000
+ 636244 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,991b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (5 pages, 5863098 bytes).
+<C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (3 pages, 5827516 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
