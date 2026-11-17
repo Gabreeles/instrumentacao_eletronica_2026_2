@@ -1,0 +1,239 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{newtxmath} % matemática em Times, igual ao texto
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{placeins}
+
+\renewcommand{\IEEEkeywordsname}{Palavras-chave}
+\renewcommand{\algorithmicif}{\textbf{se}}
+\renewcommand{\algorithmicthen}{\textbf{então}}
+\renewcommand{\algorithmicend}{\textbf{fim}}
+\renewcommand{\algorithmicloop}{\textbf{repetir}}
+
+\begin{document}
+
+\title{Calibração e Medição do Ângulo de Inclinação com o Acelerômetro do MPU 6050}
+
+\author{\IEEEauthorblockN{Felipe de Castro Quixabeira}
+\IEEEauthorblockA{\textit{Engenharia Eletrônica, FCTE} \\
+\textit{Universidade de Brasília}\\
+Brasília, Brasil \\
+Matrícula: 231026812}
+\and
+\IEEEauthorblockN{Gabriel Celestino de Almeida}
+\IEEEauthorblockA{\textit{Engenharia Eletrônica, FCTE} \\
+\textit{Universidade de Brasília}\\
+Brasília, Brasil \\
+Matrícula: 231027079}
+}
+
+\maketitle
+
+% TODO: revisar o resumo depois de escrever a calibração e a medição do ângulo
+\begin{abstract}
+Este trabalho estuda o funcionamento do sensor acelerômetro da Unidade de Medição Inercial MPU 6050, a partir da folha de dados e de ensaios com o sensor parado. Em seguida, o sensor é calibrado e usado para medir o ângulo de inclinação de um braço mecânico, comparando o resultado com um transferidor.
+\end{abstract}
+
+\begin{IEEEkeywords}
+acelerômetro, MEMS, MPU 6050, calibração, ângulo de inclinação
+\end{IEEEkeywords}
+
+\section{Introdução}
+Sensores acelerômetros são utilizados em múltiplas aplicações, atualmente encontramos eles em aplicações de robótica, interações de controle gestual, controle de veículos aéreos não tripulados e diversos outros usos.
+Para utilizarmos de forma apropriada os sensores desse tipo é necessário compreender os princípios físicos por trás do funcionamento de diferentes tipos de acelerômetros, como se originam suas principais fontes de erro, as principais características das leituras realizadas e as formas adequadas de obtenção dos dados.
+
+% TODO (Entrega 2): apresentar o projeto (braço mecânico com transferidor) e
+% colocar o link do repositório:
+% \url{https://github.com/Gabreeles/instrumentacao_eletronica_2026_2}
+
+\section{Objetivos}
+O objetivo do trabalho proposto é estudar o funcionamento do sensor acelerômetro da Unidade de Medição Inercial MPU 6050, extrair as suas principais características a partir da folha de dados (\textit{datasheet}) e verificar o funcionamento do sensor experimentalmente.
+
+% TODO (Entrega 2): acrescentar os objetivos de calibrar o sensor e medir o
+% ângulo de inclinação no mecanismo.
+
+\section{Fundamentação Teórica}
+
+\subsection{Acelerômetro}
+O acelerômetro é um transdutor capaz de medir aceleração, ele é responsável por converter grandeza mecânica em sinais elétricos. Dentre os acelerômetros que existem os que se destacam são os baseados em MEMS (\textit{Micro-Electro-Mechanical Systems}), que utilizam elementos mecânicos muito pequenos, de escala micrométrica, ocasionando no baixo consumo energético e custo.
+
+\subsection{Princípio de Funcionamento}
+Internamente o sistema pode ser interpretado como uma pequena massa suspensa por molas microscópicas, onde preso nessa massa existem várias ``linhas'' de silício similares aos dentes de um pente entrelaçam-se com outros dentes fixos no chip (Figura~\ref{fig:mems}). Quando se move o sensor, a massa se desloca e muda a distância e consequentemente a capacitância entre as peças é alterada, tendo como resultado uma variação elétrica, que permite calcular quanto de força se aplicou em um dos eixos \cite[pp.~224--226]{aguirre2013fundamentos}. Existe no chip circuitos de condicionamento que convertem essa variação em um valor digital de 16 bits.
+
+\begin{figure}[!t]
+	\centering
+	\subfloat[Microscopia de um acelerômetro MEMS capacitivo \cite{europractice_accel}.]{%
+		\includegraphics[height=3.2cm]{Figuras/acelerometro_mems_microscopia.png}}
+	\hfill
+	\subfloat[Esquema simplificado do acelerômetro capacitivo \cite{ufpr_accel}.]{%
+		\includegraphics[height=3.2cm]{Figuras/acelerometro_esquema.png}}
+	\caption{Estrutura interna de um acelerômetro MEMS capacitivo.}
+	\label{fig:mems}
+\end{figure}
+
+\subsection{Tipos de Acelerômetros}
+Existem diferentes tipos de acelerômetros, que se diferenciam pela forma como o deslocamento da massa é convertido em sinal elétrico. Nos piezoelétricos, a massa pressiona um cristal que gera carga elétrica proporcional à força, eles respondem bem a variações rápidas, mas não conseguem medir acelerações constantes, como a da gravidade \cite[pp.~187--189]{aguirre2013fundamentos}. Nos piezorresistivos, a deformação das molas altera a resistência de extensômetros ligados a elas. Já nos capacitivos, que é o caso do MPU 6050, o deslocamento altera a capacitância entre as placas, como descrito na seção anterior. Esse tipo consegue medir aceleração estática, como a da gravidade, o que é verificado na Seção~\ref{sec:verificacao}.
+
+\subsection{Erros e Fontes de Incerteza}
+
+Os erros nas medições de um acelerômetro MEMS podem decorrer de \textit{offset}, resolução limitada e desalinhamento em relação ao sistema de coordenadas de referência. Em movimentos de rotação, a distância entre o sensor e o centro de rotação também pode introduzir erros associados à aceleração angular. Esses fatores reduzem a precisão das medições e devem ser considerados na calibração \cite{Ghanipoor2020}.
+
+\subsection{Acelerômetro do MPU 6050}
+O MPU 6050 possui em um mesmo chip um acelerômetro e um giroscópio de três eixos. No acelerômetro, cada eixo possui a sua própria massa de prova, e o deslocamento dela é medido de forma diferencial por capacitores. Cada eixo tem um conversor analógico-digital sigma-delta de 16 bits e o fator de escala já vem calibrado de fábrica. Quando o sensor está parado sobre uma superfície plana, ele deve medir 0 g nos eixos X e Y e +1 g no eixo Z \cite{mpu6050}.
+
+A comunicação com o sensor é feita pelo protocolo I$^2$C e a faixa de medição ($\pm 2$, $\pm 4$, $\pm 8$ ou $\pm 16$ g) é escolhida pelo registrador \texttt{ACCEL\_CONFIG}. Os valores lidos em cada eixo são convertidos para unidades de gravidade dividindo a leitura pela sensibilidade da faixa escolhida, que no caso de $\pm 2$~g é 16384~LSB/g.
+
+\subsection{Característica do Sensor}
+
+As características principais fornecidas pelo fabricante do sensor MPU 6050 são apresentadas na Tabela~\ref{tab:parametros}. A faixa de medição do sensor é de até $\pm 16\,\mathrm{g}$, com resolução a partir de $0{,}061\,\mathrm{mg/LSB}$ e sensibilidade de $16384\,\mathrm{LSB/g}$. Esses valores podem ser alterados entre 4 diferentes faixas de medição, configuradas a partir de um dos registradores do sensor. A não linearidade do sensor é de $0{,}5\%$ e o conversor analógico-digital tem resolução de 16 bits.
+
+\begin{table}[!t]
+	\caption{Parâmetros do sensor MPU 6050, extraídos do \textit{datasheet} \cite{mpu6050}.}
+	\label{tab:parametros}
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{5pt}
+	\begin{tabular}{|l|c|c|c|c|} \hline
+		\textbf{Parâmetro} & \textbf{Mín.} & \textbf{Típ.} & \textbf{Máx.} & \textbf{Unid.} \\ \hline
+		Resolução do ADC & & 16 & & bits \\ \hline
+		Faixa nominal & $\pm 2$ & & $\pm 16$ & g \\ \hline
+		Sensibilidade & 2048 & & 16384 & LSB/g \\ \hline
+		Resolução & 0,061 & & 0,488 & mg/LSB \\ \hline
+		Não linearidade & & 0,5 & & \% \\ \hline
+		\textit{Offset} zero-g (X e Y) & & $\pm 50$ & & mg \\ \hline
+		\textit{Offset} zero-g (Z) & & $\pm 80$ & & mg \\ \hline
+		Sensibilidade cruzada & & $\pm 2$ & & \% \\ \hline
+		Densidade de ruído & & 400 & & $\mu$g/$\sqrt{\mathrm{Hz}}$ \rule[-1.2ex]{0pt}{3.6ex} \\ \hline
+	\end{tabular}
+\end{table}
+
+\section{Verificação Experimental}
+\label{sec:verificacao}
+A Figura~\ref{fig:montagem} mostra a montagem utilizada, com o MPU 6050 ligado a um ESP32 pelo barramento I$^2$C, e a Figura~\ref{fig:esquematico} mostra o esquemático das ligações.
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width=0.8\columnwidth, trim=50bp 600bp 19bp 470bp, clip]{Figuras/montagem_esp32_mpu6050.png}
+	\caption{Montagem utilizada: MPU 6050 (à esquerda) ligado ao ESP32 (à direita).}
+	\label{fig:montagem}
+\end{figure}
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width=\columnwidth]{Figuras/esquematico.png}
+	\caption{Esquemático das ligações entre o ESP32 e o MPU 6050.}
+	\label{fig:esquematico}
+\end{figure}
+
+O sensor foi mantido em repouso sobre a bancada em seis posições, duas para cada eixo, girando a placa para que a gravidade apontasse primeiro no sentido positivo e depois no sentido negativo do eixo em teste. Em cada posição foram registrados cerca de 10 segundos de leitura simultânea dos três eixos. A Figura~\ref{fig:verificacao_experimental} reúne os seis ensaios.
+
+Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}$ e os outros dois, perto de zero, como se espera do sensor em repouso. As leituras não coincidem exatamente com esses valores: o eixo Z, por exemplo, indica cerca de $0{,}1\,\mathrm{g}$ nos ensaios em que deveria ler zero. Esse desvio soma o erro de zero do próprio sensor, informado no \textit{datasheet}, ao desalinhamento entre a placa e a horizontal, já que a superfície de apoio não está perfeitamente nivelada.
+
+\begin{figure*}[!t]
+	\centering
+	\subfloat[Placa apoiada na borda, com o eixo X na vertical. X fica em torno de $+1\,g$.\label{fig:x_positivo}]{%
+		\includegraphics[width=0.47\textwidth]{Figuras/apoiado_na_borda_X_para_baixo.png}}
+	\hfill
+	\subfloat[A mesma placa virada para a borda oposta. O eixo X passa a marcar cerca de $-1\,g$.\label{fig:x_negativo}]{%
+		\includegraphics[width=0.47\textwidth]{Figuras/borda_oposta_X_para_cima.png}}
+
+	\subfloat[Placa apoiada na borda com o eixo Y na vertical, lendo perto de $+1\,g$.\label{fig:y_positivo}]{%
+		\includegraphics[width=0.47\textwidth]{Figuras/apoiado_na_borda_Y_para_baixo.png}}
+	\hfill
+	\subfloat[Borda oposta, eixo Y invertido: a leitura cai para cerca de $-1\,g$.\label{fig:y_negativo}]{%
+		\includegraphics[width=0.47\textwidth]{Figuras/borda_oposta_Y_para_cima.png}}
+
+	\subfloat[Placa deitada, componentes voltados para cima. Z marca pouco mais de $+1\,g$.\label{fig:z_positivo}]{%
+		\includegraphics[width=0.47\textwidth]{Figuras/deitado_componentes_para_cima_Z.png}}
+	\hfill
+	\subfloat[Placa deitada de cabeça para baixo, com Z em torno de $-1\,g$.\label{fig:z_negativo}]{%
+		\includegraphics[width=0.47\textwidth]{Figuras/deitado_de_cabeca_para_baixo_Z.png}}
+	\caption{Aceleração medida nos três eixos do MPU 6050 com o sensor parado, nas seis posições de ensaio, na ordem dos eixos X, Y e Z.}
+	\label{fig:verificacao_experimental}
+\end{figure*}
+
+% ---------------------------------------------------------------------------
+% Seções da Entrega 2 (ver entrega2_02_2026.pdf). Escrever aqui.
+% ---------------------------------------------------------------------------
+
+\section{Desenvolvimento}
+
+\subsection{Calibração Estática}
+% TODO: explicar como foi feita a calibração (6 posições, no mínimo 100
+% leituras por posição, médias A_{+1g,i} e A_{-1g,i}, sistema de duas equações
+% para Ganho e Offset de cada eixo) e preencher a Tabela~\ref{tab:calibracao}.
+
+\begin{table}[!htb]
+	\caption{Ganho e \textit{offset} estimados para cada eixo.}
+	\label{tab:calibracao}
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|c|c|c|c|} \hline
+		\textbf{Eixo} & $\bar{A}_{+1g}$ (g) & $\bar{A}_{-1g}$ (g) & \textbf{Ganho} & \textbf{\textit{Offset}} (g) \\ \hline
+		X & -- & -- & -- & -- \\ \hline
+		Y & -- & -- & -- & -- \\ \hline
+		Z & -- & -- & -- & -- \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection{Cálculo do Ângulo de Inclinação}
+% TODO: explicar o método usado para calcular o ângulo, com referência da
+% literatura (ex.: notas de aplicação AN3461 da Freescale e AN-1057 da Analog
+% Devices), e citar o pseudocódigo da Figura~\ref{fig:pseudocodigo}.
+
+\begin{figure}[!t]
+	\begin{algorithmic}[1]
+		\STATE configurar o MPU 6050 na faixa de $\pm 2$~g
+		\LOOP
+		\STATE ler $a_x$, $a_y$, $a_z$ e dividir por 16384~LSB/g
+		\STATE corrigir cada eixo: $c_i \leftarrow (a_i - \text{Offset}_i)/\text{Ganho}_i$
+		\STATE $\theta \leftarrow \operatorname{atan2}(c_z, c_y) \cdot 180/\pi$
+		\IF{$\theta < -90^\circ$}
+		\STATE $\theta \leftarrow \theta + 360^\circ$
+		\ENDIF
+		\STATE enviar $t$, $a_x$, $a_y$, $a_z$ e $\theta$ pela serial
+		\STATE esperar 50~ms
+		\ENDLOOP
+	\end{algorithmic}
+	\caption{Pseudocódigo do programa do ESP32.}
+	\label{fig:pseudocodigo}
+\end{figure}
+
+\subsection{Mecanismo de Validação}
+% TODO: descrever o mecanismo e como o transferidor foi acoplado (foto do
+% mecanismo montado).
+
+\begin{figure}[!t]
+	\centering
+	\subfloat[Vista frontal.]{%
+		\includegraphics[width=0.48\columnwidth]{Figuras/montagem_render_frente.png}}
+	\hfill
+	\subfloat[Vista traseira.]{%
+		\includegraphics[width=0.48\columnwidth]{Figuras/montagem_render_verso.png}}
+	\caption{Base do MPU 6050, com escala de giro horizontal na base e eixos de giro com escala a cada $15^\circ$.}
+	\label{fig:base}
+\end{figure}
+
+\section{Resultados}
+% TODO: gráfico do erro (ângulo de referência - ângulo medido) em função do
+% ângulo, ao longo da faixa do transferidor, e discussão dos resultados.
+
+\section{Conclusões}
+% TODO: análise crítica dos objetivos e resultados, perspectivas e melhorias.
+
+\FloatBarrier % todas as figuras e tabelas saem antes das referências
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}
