@@ -170,9 +170,32 @@ Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}
 \section{Desenvolvimento}
 
 \subsection{Calibração Estática}
-% TODO: explicar como foi feita a calibração (6 posições, no mínimo 100
-% leituras por posição, médias A_{+1g,i} e A_{-1g,i}, sistema de duas equações
-% para Ganho e Offset de cada eixo) e preencher a Tabela~\ref{tab:calibracao}.
+A saída de cada eixo do acelerômetro foi representada pela relação linear proposta no roteiro,
+\begin{equation}
+	A_{\text{saída}} = \text{Ganho} \times A_{\text{ref}} + A_{\text{offset}},
+	\label{eq:modelo}
+\end{equation}
+em que $A_{\text{saída}}$ é o valor lido em g, $A_{\text{ref}}$ é a aceleração de referência, que neste caso é $\pm1$\,g, o ganho é adimensional e $A_{\text{offset}}$ é um erro fixo, em g, que se soma a todas as leituras do eixo.
+
+Para a calibração, o sensor foi apoiado sobre uma superfície nivelada com o auxílio de um nível de bolha, em seis posições: para cada eixo, uma com o eixo apontando para cima ($+1$\,g) e outra com o eixo apontando para baixo ($-1$\,g). O sensor foi configurado na faixa de $\pm2$\,g, a de maior sensibilidade (16384~LSB/g), já que parado ele só mede a gravidade. Em cada posição foram gravadas 200 leituras, o dobro do mínimo pedido, com uma leitura a cada 52~ms, o que dá cerca de 10~s por posição.
+
+Com as médias $\bar{A}_{+1g,i}$ e $\bar{A}_{-1g,i}$ de cada eixo $i$, a Equação~\eqref{eq:modelo} gera um sistema de duas equações:
+\begin{align}
+	\bar{A}_{+1g,i} &= \text{Ganho}_i \times (1\,\text{g}) + A_{\text{offset},i} \label{eq:sis1}\\
+	\bar{A}_{-1g,i} &= \text{Ganho}_i \times (-1\,\text{g}) + A_{\text{offset},i} \label{eq:sis2}
+\end{align}
+Subtraindo uma equação da outra o offset é eliminado, e somando as duas o ganho é eliminado:
+\begin{equation}
+	\text{Ganho}_i = \frac{\bar{A}_{+1g,i} - \bar{A}_{-1g,i}}{2}, \quad
+	A_{\text{offset},i} = \frac{\bar{A}_{+1g,i} + \bar{A}_{-1g,i}}{2}.
+	\label{eq:solucao}
+\end{equation}
+
+Os valores obtidos estão na Tabela~\ref{tab:calibracao}. Os ganhos ficaram entre 0,9988 e 1,0153. Os offsets dos eixos X e Y ficaram abaixo de 3~mg, e o do eixo Z foi de 34,4~mg, dentro do valor típico de $\pm80$~mg informado no \textit{datasheet} (Tabela~\ref{tab:parametros}). Esses valores foram gravados no firmware, que corrige cada leitura antes de calcular o ângulo:
+\begin{equation}
+	A_{\text{corrigida}} = \frac{A_{\text{saída}} - A_{\text{offset}}}{\text{Ganho}}.
+	\label{eq:correcao}
+\end{equation}
 
 \begin{table}[!htb]
 	\caption{Ganho e \textit{offset} estimados para cada eixo.}
@@ -181,16 +204,27 @@ Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}
 	\renewcommand{\arraystretch}{1.3}
 	\begin{tabular}{|c|c|c|c|c|} \hline
 		\textbf{Eixo} & $\bar{A}_{+1g}$ (g) & $\bar{A}_{-1g}$ (g) & \textbf{Ganho} & \textbf{\textit{Offset}} (g) \\ \hline
-		X & -- & -- & -- & -- \\ \hline
-		Y & -- & -- & -- & -- \\ \hline
-		Z & -- & -- & -- & -- \\ \hline
+		X & 0{,}9960 & $-1{,}0015$ & 0{,}9988 & $-0{,}0028$ \\ \hline
+		Y & 1{,}0012 & $-0{,}9997$ & 1{,}0004 & 0{,}0007 \\ \hline
+		Z & 1{,}0497 & $-0{,}9810$ & 1{,}0153 & 0{,}0344 \\ \hline
 	\end{tabular}
 \end{table}
 
 \subsection{Cálculo do Ângulo de Inclinação}
-% TODO: explicar o método usado para calcular o ângulo, com referência da
-% literatura (ex.: notas de aplicação AN3461 da Freescale e AN-1057 da Analog
-% Devices), e citar o pseudocódigo da Figura~\ref{fig:pseudocodigo}.
+O módulo foi fixado no mecanismo com o eixo X do sensor alinhado ao eixo de giro. Dessa forma, com o braço parado, a gravidade fica sempre no plano formado pelos eixos Y e Z do sensor e o eixo X lê perto de zero; nos ensaios, a média de X ficou entre $-0{,}018$ e $0{,}022$\,g. Com o braço em $0^\circ$ o eixo Y aponta para cima e mede 1\,g. Ao girar o braço de um ângulo $\theta$, as leituras corrigidas de Y e Z passam a ser as projeções da gravidade nesses eixos,
+\begin{equation}
+	c_y = \cos\theta, \qquad c_z = \sin\theta,
+	\label{eq:projecoes}
+\end{equation}
+e o ângulo é calculado por
+\begin{equation}
+	\theta = \operatorname{atan2}(c_z,\, c_y).
+	\label{eq:atan2}
+\end{equation}
+
+Esse cálculo da inclinação a partir de dois eixos é descrito nas notas de aplicação da Freescale \cite{pedley2013} e da Analog Devices \cite{fisher2010}. A função atan2 usa o sinal das duas componentes e devolve o ângulo entre $-180^\circ$ e $180^\circ$, sem a divisão por zero que aparece em $\arctan(c_z/c_y)$ quando $\theta = 90^\circ$. Usar os dois eixos também evita a perda de sensibilidade que o cálculo com um eixo só, $\theta = \arcsin(c_z)$, tem perto de $90^\circ$ \cite{fisher2010}. Como o resultado do atan2 passa de $+180^\circ$ para $-180^\circ$ no fim da faixa do transferidor, o programa soma $360^\circ$ quando o ângulo fica abaixo de $-90^\circ$, e assim a faixa de $0^\circ$ a $180^\circ$ fica contínua.
+
+A Figura~\ref{fig:pseudocodigo} mostra o pseudocódigo do programa do ESP32. A cada 50~ms ele lê os três eixos, aplica a correção da Equação~\eqref{eq:correcao}, calcula o ângulo e envia os dados pela serial. No computador, um script em Python grava os dados em arquivos CSV e outro calcula o ganho e o offset a partir das seis posições. Todos os códigos estão no repositório do grupo\footnote{\url{https://github.com/Gabreeles/instrumentacao_eletronica_2026_2}}.
 
 \begin{figure}[!t]
 	\begin{algorithmic}[1]
@@ -211,8 +245,8 @@ Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}
 \end{figure}
 
 \subsection{Mecanismo de Validação}
-% TODO: descrever o mecanismo e como o transferidor foi acoplado (foto do
-% mecanismo montado).
+Para a validação foi projetada e impressa em 3D a base das Figuras~\ref{fig:base} e~\ref{fig:base_real}. O módulo é parafusado em um berço, que gira em torno de um eixo horizontal apoiado em um quadro, e por isso o conjunto tem um grau de liberdade, como o braço mecânico sugerido no roteiro. Um dos eixos laterais tem um pino mais curto que, apertado contra o quadro, trava o berço na posição desejada, e os dois eixos têm marcas a cada $15^\circ$. A base também tem uma escala de giro horizontal, que não foi usada neste trabalho.
+% TODO: dizer como o transferidor foi acoplado e qual a menor divisão dele.
 
 \begin{figure}[!t]
 	\centering
@@ -241,9 +275,26 @@ Em todos eles o eixo alinhado com a vertical fica próximo de $\pm 1\,\mathrm{g}
 	\label{fig:base_real}
 \end{figure}
 
+\subsection{Erro do Ângulo de Inclinação}
+Com o firmware já calibrado, o braço foi colocado em 13 ângulos de referência, de $0^\circ$ a $180^\circ$ em passos de $15^\circ$. Em cada posição o berço foi travado e foram gravadas 100 leituras. O ângulo medido é a média dessas leituras, e o erro é a diferença entre o ângulo de referência e o ângulo medido. A Figura~\ref{fig:erro} mostra o erro ao longo da faixa.
+
+Para comparar, a figura também mostra o erro sem calibração. Essa curva foi calculada depois, no computador, com as leituras brutas de X, Y e Z que o firmware grava em cada linha junto com o ângulo, aplicando a Equação~\eqref{eq:atan2} sem a correção da Equação~\eqref{eq:correcao}. Não foi feito um segundo ensaio. Isso é possível porque o modelo da Equação~\eqref{eq:modelo} é estático e invariante no tempo: o ganho e o offset de cada eixo não dependem do instante da medida nem das leituras anteriores, e a relação entre a leitura bruta e a corrigida é uma reta, linear a menos do termo constante do offset. Como o ganho é diferente de zero, essa relação pode ser aplicada ou desfeita a qualquer momento, e o ângulo sem calibração obtido dessa forma é o mesmo que o ESP32 teria mostrado sem as constantes de calibração. Compensar a leitura de um sensor pelo inverso de um modelo conhecido, ou desfazer essa compensação, é uma situação comum em instrumentação e em sistemas de controle.
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width=\columnwidth]{Figuras/grafico_erro.png}
+	\caption{Erro do ângulo (referência menos medido) em função do ângulo de referência. A curva com calibração é a saída do ESP32; a curva sem calibração foi calculada a partir das leituras brutas dos mesmos ensaios, sem a correção da Equação~\eqref{eq:correcao}.}
+	\label{fig:erro}
+\end{figure}
+
 \section{Resultados}
-% TODO: gráfico do erro (ângulo de referência - ângulo medido) em função do
-% ângulo, ao longo da faixa do transferidor, e discussão dos resultados.
+% TODO: discussão dos resultados. Números dos dados (erro_angulo.py):
+% - com calibração: erro médio -0,23 graus, maior erro -1,23 graus (em 105),
+%   RMS 0,59 graus;
+% - sem calibração: maior erro -2,99 graus (em 15); a curva sem calibração
+%   cresce de cerca de -1,4 graus (em 0) até +1,6 graus (em 180), forma
+%   esperada para o offset de 34 mg do eixo Z;
+% - desvio-padrão das 100 leituras de cada ângulo: de 0,14 a 0,51 graus.
 
 \section{Conclusões}
 % TODO: análise crítica dos objetivos e resultados, perspectivas e melhorias.

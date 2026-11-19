@@ -51,4 +51,12 @@ F.~Ghanipoor, M.~Hashemi, and H.~Salarieh, ``Toward calibration of
   \url{https://www.alldatasheet.com/datasheet-pdf/pdf/517744/ETC1/MPU-6050.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{pedley2013}
+M.~Pedley, ``Tilt sensing using a three-axis accelerometer,'' Freescale
+  Semiconductor, Application Note AN3461, Rev. 6, 2013.
+
+\bibitem{fisher2010}
+C.~J. Fisher, ``Using an accelerometer for inclination sensing,'' Analog
+  Devices, Application Note AN-1057, 2010.
+
 \end{thebibliography}

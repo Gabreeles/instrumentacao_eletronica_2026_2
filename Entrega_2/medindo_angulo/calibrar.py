@@ -13,7 +13,7 @@
 #   Ganho  = (media_pos - media_neg) / 2
 #   Offset = (media_pos + media_neg) / 2
 
-PASTA = "calibracao_sem_nivel"
+PASTA = "calibracao"
 COLUNA = {"x": 1, "y": 2, "z": 3}   # posicao de cada eixo no CSV
 
 

@@ -35,12 +35,7 @@
 \newlabel{fig:esquematico}{{3}{2}{}{figure.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {V}Desenvolvimento}{2}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Calibração Estática}{2}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Ganho e \textit  {offset} estimados para cada eixo.}}{2}{}\protected@file@percent }
-\newlabel{tab:calibracao}{{II}{2}{}{table.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Cálculo do Ângulo de Inclinação}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Mecanismo de Validação}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Resultados}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusões}{2}{}\protected@file@percent }
+\newlabel{eq:modelo}{{1}{2}{}{equation.1}{}}
 \newlabel{fig:x_positivo}{{4a}{3}{}{subfigure.4.1}{}}
 \newlabel{fig:x_negativo}{{4b}{3}{}{subfigure.4.2}{}}
 \newlabel{fig:y_positivo}{{4c}{3}{}{subfigure.4.3}{}}
@@ -55,15 +50,21 @@
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {Placa deitada, componentes voltados para cima. Z marca pouco mais de $+1\,g$.}}}{3}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {Placa deitada de cabeça para baixo, com Z em torno de $-1\,g$.}}}{3}{}\protected@file@percent }
 \newlabel{fig:verificacao_experimental}{{4}{3}{}{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pseudocódigo do programa do ESP32.}}{3}{}\protected@file@percent }
-\newlabel{fig:pseudocodigo}{{5}{3}{}{figure.5}{}}
-\bibstyle{IEEEtran}
-\bibdata{referencias}
-\bibcite{aguirre2013fundamentos}{1}
-\bibcite{europractice_accel}{2}
-\bibcite{ufpr_accel}{3}
-\bibcite{Ghanipoor2020}{4}
-\bibcite{mpu6050}{5}
+\newlabel{eq:sis1}{{2}{3}{}{equation.2}{}}
+\newlabel{eq:sis2}{{3}{3}{}{equation.3}{}}
+\newlabel{eq:solucao}{{4}{3}{}{equation.4}{}}
+\newlabel{eq:correcao}{{5}{3}{}{equation.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Ganho e \textit  {offset} estimados para cada eixo.}}{3}{}\protected@file@percent }
+\newlabel{tab:calibracao}{{II}{3}{}{table.2}{}}
+\citation{pedley2013}
+\citation{fisher2010}
+\citation{fisher2010}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pseudocódigo do programa do ESP32.}}{4}{}\protected@file@percent }
+\newlabel{fig:pseudocodigo}{{5}{4}{}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Cálculo do Ângulo de Inclinação}{4}{}\protected@file@percent }
+\newlabel{eq:projecoes}{{6}{4}{}{equation.6}{}}
+\newlabel{eq:atan2}{{7}{4}{}{equation.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Mecanismo de Validação}{4}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Modelo 3D da base do MPU 6050, com escala de giro horizontal na base e eixos de giro com escala a cada $15^\circ $.}}{4}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Vista frontal.}}}{4}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Vista traseira.}}}{4}{}\protected@file@percent }
@@ -73,5 +74,19 @@
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Vista frontal.}}}{4}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Vista lateral.}}}{4}{}\protected@file@percent }
 \newlabel{fig:base_real}{{7}{4}{}{figure.7}{}}
-\@writefile{toc}{\contentsline {section}{Refer\^encias}{4}{}\protected@file@percent }
-\gdef \@abspage@last{4}
+\bibstyle{IEEEtran}
+\bibdata{referencias}
+\bibcite{aguirre2013fundamentos}{1}
+\bibcite{europractice_accel}{2}
+\bibcite{ufpr_accel}{3}
+\bibcite{Ghanipoor2020}{4}
+\bibcite{mpu6050}{5}
+\bibcite{pedley2013}{6}
+\bibcite{fisher2010}{7}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Erro do ângulo (referência menos medido) em função do ângulo de referência. A curva com calibração é a saída do ESP32; a curva sem calibração foi calculada a partir das leituras brutas dos mesmos ensaios, sem a correção da Equação~\eqref  {eq:correcao}.}}{5}{}\protected@file@percent }
+\newlabel{fig:erro}{{8}{5}{}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Erro do Ângulo de Inclinação}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Resultados}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusões}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Refer\^encias}{5}{}\protected@file@percent }
+\gdef \@abspage@last{5}

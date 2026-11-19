@@ -13,6 +13,8 @@
 // Os valores saem do calibrar.py. Antes de calibrar, deixe
 // ganho = 1 e offset = 0.
 // ---------------------------------------------------------------
+
+/*
 #define GANHO_X  1.0
 #define GANHO_Y  1.0
 #define GANHO_Z  1.0
@@ -20,6 +22,15 @@
 #define OFFSET_X 0.0
 #define OFFSET_Y 0.0
 #define OFFSET_Z 0.0
+*/
+
+#define GANHO_X  0.9988
+#define GANHO_Y  1.0004
+#define GANHO_Z  1.0153
+
+#define OFFSET_X -0.0028
+#define OFFSET_Y 0.0007
+#define OFFSET_Z 0.0344
 
 MPU6050 mpu;
 

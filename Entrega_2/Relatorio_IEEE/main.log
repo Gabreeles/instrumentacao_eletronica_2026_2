@@ -1,86 +1,97 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.11)  17 NOV 2026 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.4)  17 NOV 2026 20:57
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/gabri/Documents/Atividades/2026/Instrumentacao/instrumentacao_eletronica_2026_2/Entrega_2/Relatorio_IEEE/main.tex
-(c:/Users/gabri/Documents/Atividades/2026/Instrumentacao/instrumentacao_eletronica_2026_2/Entrega_2/Relatorio_IEEE/main.tex
+**./main.tex
+(main.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-03-20>
+L3 programming layer <2025-12-24>
 (IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
-\@IEEEtrantmpdimenA=\dimen150
-\@IEEEtrantmpdimenB=\dimen151
-\@IEEEtrantmpdimenC=\dimen152
+\@IEEEtrantmpdimenA=\dimen148
+\@IEEEtrantmpdimenB=\dimen149
+\@IEEEtrantmpdimenC=\dimen150
 \@IEEEtrantmpcountA=\count275
 \@IEEEtrantmpcountB=\count276
 \@IEEEtrantmpcountC=\count277
 \@IEEEtrantmptoksA=\toks17
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
-(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
-\@IEEEnormalsizeunitybaselineskip=\dimen153
+\@IEEEnormalsizeunitybaselineskip=\dimen151
 -- This is a 10 point document.
-LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) on input line 937.
-\CLASSINFOnormalsizebaselineskip=\dimen154
-\CLASSINFOnormalsizeunitybaselineskip=\dimen155
-\IEEEnormaljot=\dimen156
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) o
+n input line 937.
+\CLASSINFOnormalsizebaselineskip=\dimen152
+\CLASSINFOnormalsizeunitybaselineskip=\dimen153
+\IEEEnormaljot=\dimen154
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-\IEEEquantizedlength=\dimen157
-\IEEEquantizedlengthdiff=\dimen158
-\IEEEquantizedtextheightdiff=\dimen159
-\IEEEilabelindentA=\dimen160
-\IEEEilabelindentB=\dimen161
-\IEEEilabelindent=\dimen162
-\IEEEelabelindent=\dimen163
-\IEEEdlabelindent=\dimen164
-\IEEElabelindent=\dimen165
-\IEEEiednormlabelsep=\dimen166
-\IEEEiedmathlabelsep=\dimen167
+
+\IEEEquantizedlength=\dimen155
+\IEEEquantizedlengthdiff=\dimen156
+\IEEEquantizedtextheightdiff=\dimen157
+\IEEEilabelindentA=\dimen158
+\IEEEilabelindentB=\dimen159
+\IEEEilabelindent=\dimen160
+\IEEEelabelindent=\dimen161
+\IEEEdlabelindent=\dimen162
+\IEEElabelindent=\dimen163
+\IEEEiednormlabelsep=\dimen164
+\IEEEiedmathlabelsep=\dimen165
 \IEEEiedtopsep=\skip49
 \c@section=\count278
 \c@subsection=\count279
@@ -94,76 +105,97 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEeqnnumcols=\count285
 \@IEEEeqncolcnt=\count286
 \@IEEEsubeqnnumrollback=\count287
-\@IEEEquantizeheightA=\dimen168
-\@IEEEquantizeheightB=\dimen169
-\@IEEEquantizeheightC=\dimen170
-\@IEEEquantizeprevdepth=\dimen171
+\@IEEEquantizeheightA=\dimen166
+\@IEEEquantizeheightB=\dimen167
+\@IEEEquantizeheightC=\dimen168
+\@IEEEquantizeprevdepth=\dimen169
 \@IEEEquantizemultiple=\count288
 \@IEEEquantizeboxA=\box53
-\@IEEEtmpitemindent=\dimen172
-\IEEEPARstartletwidth=\dimen173
+\@IEEEtmpitemindent=\dimen170
+\IEEEPARstartletwidth=\dimen171
 \c@IEEEbiography=\count289
 \@IEEEtranrubishbin=\box54
 )
 ** ATTENTION: Overriding command lockouts (line 2).
-(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 116.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+))
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2026/04/15 v26.6 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
 \babel@savecnt=\count290
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
-\U@D=\dimen174
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2101.
+\U@D=\dimen172
 \l@unhyphenated=\language79
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count291
 Package babel Info: Configuration files are deprecated, as
 (babel)             they can break document portability.
-(babel)             Reported on input line 4206.
+(babel)             Reported on input line 4196.
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pt\babel-portuguese.tex)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pt\babel
+-portuguese.tex)
 Package babel Info: Importing font and identification data for portuguese
-(babel)             from babel-pt.ini. Reported on input line 4330.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\portuguese.ldf
+(babel)             from babel-pt.ini. Reported on input line 4320.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\portugue
+se.ldf
 Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
 Package babel Info: Making " an active character on input line 132.
-)) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+)) (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen175
-)) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+\ex@=\dimen173
+))
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen176
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+\pmbraise@=\dimen174
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count292
@@ -183,7 +215,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen177
+\big@size=\dimen175
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count297
@@ -201,40 +233,50 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count302
 \maxfields@=\count303
 \andhelp@=\toks22
-\eqnshift@=\dimen178
-\alignsep@=\dimen179
-\tagshift@=\dimen180
-\tagwidth@=\dimen181
-\totwidth@=\dimen182
-\lineht@=\dimen183
+\eqnshift@=\dimen176
+\alignsep@=\dimen177
+\tagshift@=\dimen178
+\tagwidth@=\dimen179
+\totwidth@=\dimen180
+\lineht@=\dimen181
 \@envbody=\toks23
 \multlinegap=\skip53
 \multlinetaggap=\skip54
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\newtxmath.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\newtxmath.sty
 Package: newtxmath 2024/09/22 v1.754
- `newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+
+`newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
+) (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count304
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks25
 \XKV@tempa@toks=\toks26
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex))
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex))
 \XKV@depth=\count305
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\centernot.sty
+))
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
 \tx@cntz=\count306
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.tex)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.tex)
 \tx@Isdigit=\count307
 \tx@IsAlNum=\count308
 \tx@tA=\toks27
@@ -308,17 +350,20 @@ Now handling font encoding LMX ...
 ... no UTF-8 mapping file for font encoding LMX
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 664.
 LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 664.
+(Font)              `largesymbols' in the math version `normal' on input line 6
+64.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 664.
 LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 664.
+(Font)              `largesymbols' in the math version `bold' on input line 664
+.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> LMX/ntxexx/m/n on input line 664.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 665.
 \symlargesymbolsTXA=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
+
 (Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 679.
 \tx@sbptoks=\toks29
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 902.
@@ -337,7 +382,9 @@ LaTeX Font Info:    Redeclaring math accent \ddot on input line 992.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 2057.
 LaTeX Info: Redefining \Bbbk on input line 2847.
 LaTeX Info: Redefining \not on input line 2995.
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.
+sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count309
 \c@ALC@line=\count310
@@ -345,40 +392,57 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@depth=\count312
 \ALC@tlm=\skip55
 \algorithmicindent=\skip56
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen184
-\Gin@req@width=\dimen185
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+\Gin@req@height=\dimen182
+\Gin@req@width=\dimen183
+) (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen186
-\captionmargin=\dimen187
-\caption@leftmargin=\dimen188
-\caption@rightmargin=\dimen189
-\caption@width=\dimen190
-\caption@indent=\dimen191
-\caption@parindent=\dimen192
-\caption@hangindent=\dimen193
+\caption@tempdima=\dimen184
+\captionmargin=\dimen185
+\caption@leftmargin=\dimen186
+\caption@rightmargin=\dimen187
+\caption@width=\dimen188
+\caption@indent=\dimen189
+\caption@parindent=\dimen190
+\caption@hangindent=\dimen191
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1175.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1175.
 )
 \c@KVtest=\count313
 \sf@farskip=\skip57
-\sf@captopadj=\dimen194
+\sf@captopadj=\dimen192
 \sf@capskip=\skip58
 \sf@nearskip=\skip59
 \c@subfigure=\count314
@@ -389,17 +453,21 @@ Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtab
 \c@lotdepth=\count319
 \sf@top=\skip60
 \sf@bottom=\skip61
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/gensymb\gensymb.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/gensymb\gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -409,13 +477,16 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+) (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 ) (main.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
@@ -424,8 +495,10 @@ Package babel Info: 'portuguese' activates 'portuges' shorthands.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 24.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 24.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
+ 24.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 24.
@@ -440,20 +513,26 @@ LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 24.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 24.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+24.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 24.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 24.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
+ 24.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 24.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 24.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
+e 24.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 24.
@@ -461,23 +540,30 @@ LaTeX Font Info:    ... okay on input line 24.
 -- Lines per column: 56 (exact).
 LaTeX Info: Command `\dddot' is already robust on input line 24.
 LaTeX Info: Command `\ddddot' is already robust on input line 24.
-(C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count321
-\scratchdimen=\dimen195
+\scratchdimen=\dimen193
 \scratchbox=\box57
 \nofMPsegments=\count322
 \nofMParguments=\count323
 \everyMPshowfont=\toks30
 \MPscratchCnt=\count324
-\MPscratchDim=\dimen196
+\MPscratchDim=\dimen194
 \MPnumerator=\count325
 \makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks31
-) (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
@@ -489,14 +575,16 @@ LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 Package gensymb Info: Math companion symbols declared on input line 24.
 LaTeX Info: Redefining \degree on input line 24.
 LaTeX Info: Redefining \celsius on input line 24.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 24.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 24.
 LaTeX Info: Redefining \ohm on input line 24.
 Package gensymb Info: Using \textohm for \ohm on input line 24.
 Package gensymb Info: Using \textmu for \micro on input line 24.
 <Figuras/acelerometro_mems_microscopia.png, id=1, 2020.54875pt x 1355.0625pt>
 File: Figuras/acelerometro_mems_microscopia.png Graphic file (type png)
 <use Figuras/acelerometro_mems_microscopia.png>
-Package pdftex.def Info: Figuras/acelerometro_mems_microscopia.png  used on input line 77.
+Package pdftex.def Info: Figuras/acelerometro_mems_microscopia.png  used on inp
+ut line 77.
 (pdftex.def)             Requested size: 135.74911pt x 91.04872pt.
 
 Underfull \hbox (badness 3792) in paragraph at lines 77--77
@@ -506,14 +594,19 @@ Underfull \hbox (badness 3792) in paragraph at lines 77--77
 <Figuras/acelerometro_esquema.png, id=2, 320.19624pt x 260.975pt>
 File: Figuras/acelerometro_esquema.png Graphic file (type png)
 <use Figuras/acelerometro_esquema.png>
-Package pdftex.def Info: Figuras/acelerometro_esquema.png  used on input line 80.
+Package pdftex.def Info: Figuras/acelerometro_esquema.png  used on input line 8
+0.
 (pdftex.def)             Requested size: 111.7088pt x 91.04872pt.
-[1{C:/Users/gabri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+[1{C:/Users/felip/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/fe
+lip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
- <./Figuras/acelerometro_mems_microscopia.png (PNG copy)> <./Figuras/acelerometro_esquema.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 95.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
+ <./Figuras/acelerometro_mems_microscopia.png (PNG copy)> <./Figuras/aceleromet
+ro_esquema.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
+e 95.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
@@ -540,8 +633,10 @@ LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
 (Font)              scaled to size 7.3pt on input line 95.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
 (Font)              scaled to size 5.5pt on input line 95.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 95.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
+95.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
@@ -550,8 +645,10 @@ LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
 (Font)              scaled to size 7.3pt on input line 95.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
 (Font)              scaled to size 5.5pt on input line 95.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 95.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
+95.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
@@ -560,8 +657,10 @@ LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
 (Font)              scaled to size 7.3pt on input line 95.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
 (Font)              scaled to size 5.5pt on input line 95.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 95.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
+95.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
@@ -576,12 +675,16 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 7.3pt on input line 95.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 5.5pt on input line 95.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 95.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 9
+5.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 95.
- (C:\Users\gabri\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 95
+.
+
+(C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
@@ -623,7 +726,8 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 <Figuras/montagem_esp32_mpu6050.png, id=11, 902.37125pt x 1604.99625pt>
 File: Figuras/montagem_esp32_mpu6050.png Graphic file (type png)
 <use Figuras/montagem_esp32_mpu6050.png>
-Package pdftex.def Info: Figuras/montagem_esp32_mpu6050.png  used on input line 127.
+Package pdftex.def Info: Figuras/montagem_esp32_mpu6050.png  used on input line
+ 127.
 (pdftex.def)             Requested size: 201.60077pt x 128.48387pt.
 <Figuras/esquematico.png, id=13, 447.17062pt x 236.38312pt>
 File: Figuras/esquematico.png Graphic file (type png)
@@ -633,74 +737,98 @@ Package pdftex.def Info: Figuras/esquematico.png  used on input line 134.
 <Figuras/apoiado_na_borda_X_para_baixo.png, id=15, 722.7pt x 361.35pt>
 File: Figuras/apoiado_na_borda_X_para_baixo.png Graphic file (type png)
 <use Figuras/apoiado_na_borda_X_para_baixo.png>
-Package pdftex.def Info: Figuras/apoiado_na_borda_X_para_baixo.png  used on input line 146.
+Package pdftex.def Info: Figuras/apoiado_na_borda_X_para_baixo.png  used on inp
+ut line 146.
 (pdftex.def)             Requested size: 242.52063pt x 121.25838pt.
 <Figuras/borda_oposta_X_para_cima.png, id=16, 722.7pt x 361.35pt>
 File: Figuras/borda_oposta_X_para_cima.png Graphic file (type png)
 <use Figuras/borda_oposta_X_para_cima.png>
-Package pdftex.def Info: Figuras/borda_oposta_X_para_cima.png  used on input line 149.
+Package pdftex.def Info: Figuras/borda_oposta_X_para_cima.png  used on input li
+ne 149.
 (pdftex.def)             Requested size: 242.52063pt x 121.25838pt.
 <Figuras/apoiado_na_borda_Y_para_baixo.png, id=17, 722.7pt x 361.35pt>
 File: Figuras/apoiado_na_borda_Y_para_baixo.png Graphic file (type png)
 <use Figuras/apoiado_na_borda_Y_para_baixo.png>
-Package pdftex.def Info: Figuras/apoiado_na_borda_Y_para_baixo.png  used on input line 152.
+Package pdftex.def Info: Figuras/apoiado_na_borda_Y_para_baixo.png  used on inp
+ut line 152.
 (pdftex.def)             Requested size: 242.52063pt x 121.25838pt.
 <Figuras/borda_oposta_Y_para_cima.png, id=18, 722.7pt x 361.35pt>
 File: Figuras/borda_oposta_Y_para_cima.png Graphic file (type png)
 <use Figuras/borda_oposta_Y_para_cima.png>
-Package pdftex.def Info: Figuras/borda_oposta_Y_para_cima.png  used on input line 155.
+Package pdftex.def Info: Figuras/borda_oposta_Y_para_cima.png  used on input li
+ne 155.
 (pdftex.def)             Requested size: 242.52063pt x 121.25838pt.
 <Figuras/deitado_componentes_para_cima_Z.png, id=19, 722.7pt x 361.35pt>
 File: Figuras/deitado_componentes_para_cima_Z.png Graphic file (type png)
 <use Figuras/deitado_componentes_para_cima_Z.png>
-Package pdftex.def Info: Figuras/deitado_componentes_para_cima_Z.png  used on input line 158.
+Package pdftex.def Info: Figuras/deitado_componentes_para_cima_Z.png  used on i
+nput line 158.
 (pdftex.def)             Requested size: 242.52063pt x 121.25838pt.
 <Figuras/deitado_de_cabeca_para_baixo_Z.png, id=20, 722.7pt x 361.35pt>
 File: Figuras/deitado_de_cabeca_para_baixo_Z.png Graphic file (type png)
 <use Figuras/deitado_de_cabeca_para_baixo_Z.png>
-Package pdftex.def Info: Figuras/deitado_de_cabeca_para_baixo_Z.png  used on input line 161.
+Package pdftex.def Info: Figuras/deitado_de_cabeca_para_baixo_Z.png  used on in
+put line 161.
 (pdftex.def)             Requested size: 242.52063pt x 121.25838pt.
+[2{C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-t
+lf.enc} <./Figuras/esquematico.png> <./Figuras/montagem_esp32_mpu6050.png (PNG 
+copy)>]
 
 LaTeX Font Warning: Font shape `T1/ptm/m/scit' undefined
-(Font)              using `T1/ptm/m/it' instead on input line 178.
+(Font)              using `T1/ptm/m/it' instead on input line 201.
 
-<Figuras/montagem_render_frente.png, id=21, 1774.63pt x 2167.09625pt>
+[3 <./Figuras/apoiado_na_borda_X_para_baixo.png> <./Figuras/borda_oposta_X_para
+_cima.png> <./Figuras/apoiado_na_borda_Y_para_baixo.png> <./Figuras/borda_opost
+a_Y_para_cima.png> <./Figuras/deitado_componentes_para_cima_Z.png> <./Figuras/d
+eitado_de_cabeca_para_baixo_Z.png>]
+<Figuras/montagem_render_frente.png, id=42, 1774.63pt x 2167.09625pt>
 File: Figuras/montagem_render_frente.png Graphic file (type png)
 <use Figuras/montagem_render_frente.png>
-Package pdftex.def Info: Figuras/montagem_render_frente.png  used on input line 220.
+Package pdftex.def Info: Figuras/montagem_render_frente.png  used on input line
+ 254.
 (pdftex.def)             Requested size: 120.95892pt x 147.67804pt.
-<Figuras/montagem_render_verso.png, id=22, 1774.63pt x 2167.09625pt>
+<Figuras/montagem_render_verso.png, id=43, 1774.63pt x 2167.09625pt>
 File: Figuras/montagem_render_verso.png Graphic file (type png)
 <use Figuras/montagem_render_verso.png>
-Package pdftex.def Info: Figuras/montagem_render_verso.png  used on input line 223.
+Package pdftex.def Info: Figuras/montagem_render_verso.png  used on input line 
+257.
 (pdftex.def)             Requested size: 120.95892pt x 147.67804pt.
-<Figuras/base__isometrico.jpg, id=23, 2610.75375pt x 3481.005pt>
+<Figuras/base__isometrico.jpg, id=44, 2610.75375pt x 3481.005pt>
 File: Figuras/base__isometrico.jpg Graphic file (type jpg)
 <use Figuras/base__isometrico.jpg>
-Package pdftex.def Info: Figuras/base__isometrico.jpg  used on input line 231.
+Package pdftex.def Info: Figuras/base__isometrico.jpg  used on input line 265.
 (pdftex.def)             Requested size: 138.60077pt x 184.78984pt.
-<Figuras/base_frontal.jpg, id=24, 2472.23625pt x 3296.315pt>
+<Figuras/base_frontal.jpg, id=45, 2472.23625pt x 3296.315pt>
 File: Figuras/base_frontal.jpg Graphic file (type jpg)
 <use Figuras/base_frontal.jpg>
-Package pdftex.def Info: Figuras/base_frontal.jpg  used on input line 236.
+Package pdftex.def Info: Figuras/base_frontal.jpg  used on input line 270.
 (pdftex.def)             Requested size: 100.79846pt x 134.39532pt.
-<Figuras/base_lateral.jpg, id=25, 2686.035pt x 3581.38pt>
+<Figuras/base_lateral.jpg, id=46, 2686.035pt x 3581.38pt>
 File: Figuras/base_lateral.jpg Graphic file (type jpg)
 <use Figuras/base_lateral.jpg>
-Package pdftex.def Info: Figuras/base_lateral.jpg  used on input line 239.
+Package pdftex.def Info: Figuras/base_lateral.jpg  used on input line 273.
 (pdftex.def)             Requested size: 100.79846pt x 134.37793pt.
-[2{C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./Figuras/esquematico.png> <./Figuras/montagem_esp32_mpu6050.png (PNG copy)>]
 
-LaTeX Warning: Text page 3 contains only floats.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[3 <./Figuras/apoiado_na_borda_X_para_baixo.png> <./Figuras/borda_oposta_X_para_cima.png> <./Figuras/apoiado_na_borda_Y_para_baixo.png> <./Figuras/borda_oposta_Y_para_cima.png> <./Figuras/deitado_componentes_para_cima_Z.png> <./Figuras/deitado_de_cabeca_para_baixo_Z.png>] (main.bbl
+ [4 <./Figuras/montagem_render_frente.png (PNG copy)> <./Figuras/montagem_rende
+r_verso.png (PNG copy)> <./Figuras/base__isometrico.jpg> <./Figuras/base_fronta
+l.jpg> <./Figuras/base_lateral.jpg>]
+<Figuras/grafico_erro.png, id=50, 252.945pt x 173.448pt>
+File: Figuras/grafico_erro.png Graphic file (type png)
+<use Figuras/grafico_erro.png>
+Package pdftex.def Info: Figuras/grafico_erro.png  used on input line 285.
+(pdftex.def)             Requested size: 252.0pt x 172.80444pt.
+ (main.bbl
 Underfull \hbox (badness 2080) in paragraph at lines 32--35
-[]\T1/ptm/m/n/8 A. Moham-madi and S. Ng, ``Z-axis MEMS ac-ce-le-ro-me-ter,'' EU-
+[]\T1/ptm/m/n/8 A. Moham-madi and S. Ng, ``Z-axis MEMS ac-ce-le-ro-me-ter,'' EU
+-
  []
 
 
 Underfull \hbox (badness 7168) in paragraph at lines 32--35
-\T1/ptm/m/n/8 RO-PRAC-TICE. Dis-po-ní-vel em: $https : / / europractice-[]ic . com / markets /
+\T1/ptm/m/n/8 RO-PRAC-TICE. Dis-po-ní-vel em: $https : / / europractice-[]ic . 
+com / markets /
  []
 
 )
@@ -715,24 +843,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./Figuras/montagem_render_frente.png (PNG copy)> <./Figuras/montagem_render_verso.png (PNG copy)> <./Figuras/base__isometrico.jpg> <./Figuras/base_frontal.jpg> <./Figuras/base_lateral.jpg>] (main.aux)
+[5 <./Figuras/grafico_erro.png>] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-03-20>
+L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9626 strings out of 467691
- 149557 string characters out of 5414987
- 574821 words of memory out of 5000000
- 38520 multiletter control sequences out of 15000+600000
- 772478 words of font info for 207 fonts, out of 8000000 for 9000
+ 9648 strings out of 467871
+ 150107 string characters out of 5418377
+ 566567 words of memory out of 5000000
+ 38360 multiletter control sequences out of 15000+600000
+ 776486 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,11n,117p,909b,473s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI5.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb>
-Output written on main.pdf (4 pages, 11699963 bytes).
+ 69i,11n,117p,1058b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXM
+I.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/Ne
+wTXMI5.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
+tx/NewTXMI7.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/newtx/txmiaX.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/newtx/txsys.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/courier/ucrr8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/times/utmb8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/times/utmbi8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmri8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/newtx/ztmr.pfb>
+Output written on main.pdf (5 pages, 11773925 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
