@@ -278,7 +278,7 @@ Para a validação foi projetada e impressa em 3D a base das Figuras~\ref{fig:ba
 \subsection{Erro do Ângulo de Inclinação}
 Com o firmware já calibrado, o braço foi colocado em 13 ângulos de referência, de $0^\circ$ a $180^\circ$ em passos de $15^\circ$. Em cada posição o berço foi travado e foram gravadas 100 leituras. O ângulo medido é a média dessas leituras, e o erro é a diferença entre o ângulo de referência e o ângulo medido. A Figura~\ref{fig:erro} mostra o erro ao longo da faixa.
 
-Para comparar, a figura também mostra o erro sem calibração. Essa curva foi calculada depois, no computador, com as leituras brutas de X, Y e Z que o firmware grava em cada linha junto com o ângulo, aplicando a Equação~\eqref{eq:atan2} sem a correção da Equação~\eqref{eq:correcao}. Não foi feito um segundo ensaio. Isso é possível porque o modelo da Equação~\eqref{eq:modelo} é estático e invariante no tempo: o ganho e o offset de cada eixo não dependem do instante da medida nem das leituras anteriores, e a relação entre a leitura bruta e a corrigida é uma reta, linear a menos do termo constante do offset. Como o ganho é diferente de zero, essa relação pode ser aplicada ou desfeita a qualquer momento, e o ângulo sem calibração obtido dessa forma é o mesmo que o ESP32 teria mostrado sem as constantes de calibração. Compensar a leitura de um sensor pelo inverso de um modelo conhecido, ou desfazer essa compensação, é uma situação comum em instrumentação e em sistemas de controle.
+Para comparar, a figura também mostra o erro sem calibração. Essa curva foi calculada com as leituras brutas de X, Y e Z que o firmware grava em cada linha junto com o ângulo corrigido, aplicando a Equação~\eqref{eq:atan2} sem a correção da Equação~\eqref{eq:correcao}. 
 
 \begin{figure}[!t]
 	\centering
@@ -296,8 +296,52 @@ Para comparar, a figura também mostra o erro sem calibração. Essa curva foi c
 %   esperada para o offset de 34 mg do eixo Z;
 % - desvio-padrão das 100 leituras de cada ângulo: de 0,14 a 0,51 graus.
 
+Ao calcularmos os erros médios entre os angulos medidos, raiz do erro quadrático médio (RMSE) e seus desvios padrões, exibidos na Tabela \ref{tab:erro_angulo}.
+
+Percebe-se que após a a calibração tanto o erro máximo quanto o desvio padrão diminuiram, mostrando que a calibração do sensor torna seu comportamento mais exato. O erro médio se mantem similar pois os erros dos sensores possuem sinais diferentes e diminuem o valor do erro médio, por isso é importante considear o RMSE (Root Mean Square Error) e o desvio padrão para avaliar a precisão do sensor.
+
+\begin{table}[h]
+\centering
+\caption{Erro do ângulo de inclinação com e sem calibração.}
+\label{tab:erro_angulo}
+\begin{tabular}{lcc}
+\hline
+Métrica & Com calibração & Sem calibração \\
+\hline
+Erro médio (${\degree}$)          & $-0{,}23$ & $-0{,}20$ \\
+Maior erro (${\degree}$)          & $-1{,}23$ & $-2{,}99$ \\
+Desvio padrão (${\degree}$)       & $0{,}56$ & $1{,}58$ \\
+RMSE (${\degree}$)                & $0{,}65$ & $1{,}56$ \\
+\hline
+\end{tabular}
+\end{table}
+
+É importante considear que o transferidor utilizado para medir o ângulo de referência possui uma resolução de 1 grau, o que limita a precisão da medição do ângulo de referência. Além disso, é possivel que haja erros gerados pela inclinação do sensor no sentido diferente do que estava sendo medido, já que a base não possuia nivelamento perfeito.
+
 \section{Conclusões}
 % TODO: análise crítica dos objetivos e resultados, perspectivas e melhorias.
+
+Neste trabalho, o acelerômetro do MPU 6050 foi caracterizado a partir da
+folha de dados, verificado com o sensor em repouso, calibrado pelo método das
+seis posições e usado para medir o ângulo de inclinação de um mecanismo de um
+grau de liberdade, comparado a uma referência angular. A calibração resultou
+em ganhos entre $0{,}9988$ e $1{,}0153$ e em um \textit{offset} de
+$34{,}4$~mg no eixo Z, compatível com o valor típico de $\pm 80$~mg informado
+no \textit{datasheet}.
+
+Nos 13 ângulos ensaiados, de $0^\circ$ a $180^\circ$ em passos de $15^\circ$,
+a calibração reduziu o RMSE de $1{,}56^\circ$ para $0{,}65^\circ$ (cerca de
+58\%) e o maior erro médio de $2{,}99^\circ$ para $1{,}23^\circ$. O erro
+médio praticamente não mudou ($-0{,}20^\circ$ e $-0{,}23^\circ$), porque os
+erros sem calibração têm sinais alternados e se cancelam; por isso ele não
+serve, sozinho, como medida de exatidão. 
+
+Os resultados valem para as condições do ensaio: medição estática, uma única
+unidade do sensor e com uma série de leituras por
+ângulo. A referência angular, com resolução de $1^\circ$, também contribui
+para o erro observado e limita a exatidão que pode ser afirmada. Como
+melhorias, propõem-se calibrar o sensor já montado no mecanismo e com mais
+orientações, usar uma referência angular mais exata.
 
 \FloatBarrier % todas as figuras e tabelas saem antes das referências
 \bibliographystyle{IEEEtran}
