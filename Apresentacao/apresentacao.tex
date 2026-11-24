@@ -259,6 +259,42 @@ c_y = \cos\theta,\quad c_z = \sin\theta
 \end{frame}
 
 % ---------------------------------------------------------------------
+\begin{frame}{Passo a passo dos ensaios}
+\begin{columns}[T]
+\begin{column}{0.49\textwidth}
+\begin{block}{Calibração}
+\footnotesize
+\begin{enumerate}
+\item Fechar o monitor serial
+\item Tirar o módulo do berço e pôr na mesa nivelada
+\item Capturar 200 leituras sem encostar na placa:\\
+{\tiny\texttt{python capturar.py COM3 calibracao/x\_pos.csv 200}}
+\item Repetir nas 6 posições: \texttt{x\_pos}, \texttt{x\_neg}, \texttt{y\_pos}, \texttt{y\_neg}, \texttt{z\_pos}, \texttt{z\_neg}
+\item Rodar \texttt{python calibrar.py}
+\item Copiar os 6 \texttt{\#define} para o \texttt{main.cpp}
+\item Gravar de novo (Upload)
+\end{enumerate}
+\end{block}
+\end{column}
+\begin{column}{0.49\textwidth}
+\begin{block}{Gráfico do erro angular}
+\footnotesize
+\begin{enumerate}
+\item Pôr o módulo no berço, com X no eixo de giro
+\item Conferir no monitor: perto de 0 em $0^\circ$ e de 90 em $90^\circ$
+\item Fechar o monitor serial
+\item Girar o braço até o ângulo, sempre subindo, e travar
+\item Capturar 100 leituras:\\
+{\tiny\texttt{python capturar.py COM3 angulos/ang\_0.csv 100}}
+\item Repetir 4 e 5 de $15^\circ$ em $15^\circ$ até $180^\circ$ (13 arquivos)
+\item Rodar \texttt{python erro\_angulo.py}
+\end{enumerate}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------------
 \begin{frame}{Erro do ângulo}
 \slidegrafico{%
 \begin{itemize}

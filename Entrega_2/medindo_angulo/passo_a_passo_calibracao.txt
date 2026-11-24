@@ -1,0 +1,79 @@
+PASSO A PASSO CALIBRAÇÃO:
+
+1. Feche o monitor serial (Ctrl+C). O monitor e o script não podem usar
+   a porta ao mesmo tempo.
+
+2. Tire o módulo do berço e ponha na mesa nivelada, na 1ª posição.
+
+3. Rode o comando da posição. Não encoste na placa por 13 s.
+
+4. Repita para as 6 posições (troque COM3 se a porta for outra):
+
+   python capturar.py COM3 calibracao/x_pos.csv 200   # X para cima
+   python capturar.py COM3 calibracao/x_neg.csv 200   # X para baixo
+   python capturar.py COM3 calibracao/y_pos.csv 200   # Y para cima
+   python capturar.py COM3 calibracao/y_neg.csv 200   # Y para baixo
+   python capturar.py COM3 calibracao/z_pos.csv 200   # componentes para cima
+   python capturar.py COM3 calibracao/z_neg.csv 200   # de cabeça para baixo
+
+5. Rode:
+
+   python calibrar.py
+
+6. Copie as 6 linhas #define que ele imprime para o topo do src/main.cpp,
+   no lugar das que estão lá.
+
+7. Clique em Upload (seta para a direita) para gravar de novo, ou rode:
+
+   pio run --target upload
+
+PRONTO QUANDO
+- Ganhos entre 0,95 e 1,05.
+- Offsets de algumas dezenas de mg, no máximo.
+- Firmware gravado de novo.
+- Saída do calibrar.py guardada (as linhas da Tabela II vão para o relatório).
+
+
+=======================================================================
+PASSO A PASSO DO GRÁFICO DO ERRO ANGULAR:
+
+1. Ponha o módulo no berço, com o eixo X ao longo do eixo de giro.
+
+2. Confira o eixo no monitor (pio device monitor). A última coluna é o
+   ângulo:
+   - braço em 0 graus: perto de 0
+   - braço em +90 graus: perto de +90
+   Se +90 der perto de -90, troque na linha 67 do src/main.cpp para
+   atan2(-cz, cy) e grave de novo.
+
+3. Feche o monitor (Ctrl+C).
+
+4. Gire o braço até o ângulo, sempre subindo, e trave.
+
+5. Capture 100 leituras, com o ângulo do transferidor no nome do arquivo
+   (troque COM3 se a porta for outra). Não encoste no braço por 8 s:
+
+   python capturar.py COM3 angulos/ang_0.csv 100
+
+6. Repita os passos 4 e 5 de 15 em 15 graus, até 180 (13 arquivos):
+
+   python capturar.py COM3 angulos/ang_15.csv 100
+   python capturar.py COM3 angulos/ang_30.csv 100
+   python capturar.py COM3 angulos/ang_45.csv 100
+   python capturar.py COM3 angulos/ang_60.csv 100
+   python capturar.py COM3 angulos/ang_75.csv 100
+   python capturar.py COM3 angulos/ang_90.csv 100
+   python capturar.py COM3 angulos/ang_105.csv 100
+   python capturar.py COM3 angulos/ang_120.csv 100
+   python capturar.py COM3 angulos/ang_135.csv 100
+   python capturar.py COM3 angulos/ang_150.csv 100
+   python capturar.py COM3 angulos/ang_165.csv 100
+   python capturar.py COM3 angulos/ang_180.csv 100
+
+7. Rode:
+
+   python erro_angulo.py
+
+PRONTO QUANDO
+- A tabela mostra 13 ângulos com 100 leituras cada.
+- A janela do gráfico abre e o grafico_erro.png é salvo na pasta.
